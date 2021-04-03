@@ -163,6 +163,7 @@ function Desc() {
                                         </div>
                                     </div>
                                 </form>
+
                                 <nav aria-label="Page navigation example">
                                     <ul className="pagination justify-content-center">
                                         <li className="page-item">
@@ -174,8 +175,8 @@ function Desc() {
                                         </li>
                                     </ul>
                                 </nav>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>

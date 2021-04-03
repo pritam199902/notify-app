@@ -36,6 +36,7 @@ function Welcome() {
             setGoto(true)
           }}
         >
+
           <i className="fa fa-home mr-2"></i>
           Notify Home
         </button>
@@ -68,10 +69,10 @@ function Welcome() {
         Welcome to Notify
       </h1>
 
-      {
-        goto && isRegistered ? <Redirect to="/home" /> : <Redirect to="/insreg" />
-      }
       {isRegistered ? Info() : Registration()}
+      {
+        goto ? (isRegistered ? <Redirect to="/home" /> : <Redirect to="/insreg" />) : ""
+      }
       {/* {Info()} */}
 
     </div>

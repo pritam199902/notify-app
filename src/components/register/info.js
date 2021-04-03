@@ -109,7 +109,7 @@ function Info() {
             <style>{'body { background-color: #d4d0c7; }'}</style>
             <div className="container my-2">
                 <div className="row m-auto">
-                    <div className="col-lg-8 col-md-8 col-sm-9 m-auto">
+                    <div className="col-lg-9 col-md-10 m-auto">
                         <div className="card shadow">
                             <div className="card-body">
                                 {/* Header */}
@@ -117,7 +117,7 @@ function Info() {
                                     <div className="col">
                                         <h4 className="text-center" style={{ fontWeight: 'bold', color: '#bbb' }}>
                                             Institute Registration
-                    </h4>
+                                        </h4>
                                     </div>
                                 </div>
                                 {/* Subheader */}
@@ -125,11 +125,11 @@ function Info() {
                                     <div className="col">
                                         <h5 className="text-center" style={{ fontWeight: 'revert', fontStyle: 'italic', color: '#666' }}>
                                             Information
-                    </h5>
+                                        </h5>
                                     </div>
                                 </div>
                                 {/* Input */}
-                                <form onSubmit={onSubmits}>
+                                <form className="mb-0" onSubmit={onSubmits}>
                                     <div className="row mt-2">
                                         <div className="col-lg-8 col-md-8 col-sm-9 m-auto">
                                             {/* NAME */}
@@ -179,7 +179,7 @@ function Info() {
                                                     </span>
                                                 </div>
                                                 <input className="form-control" type="file" id="formFile" />
-                                                <label className="text pt-2">Upload logo</label>
+                                                <label className="text pt-2">Logo</label>
                                             </div>
 
                                             {/* EMAIL */}
@@ -301,45 +301,22 @@ function Info() {
                                             )}
 
 
-
-                                            {/* admissionCellMobile */}
-
-
-
-
-
-
-
                                             {/* LOGIN BUTTON */}
-                                            <button type="submit">submit</button>
-                                            <center>
+                                            {/* <button className="btn btn-info mt-3" type="submit">Next {">>"} </button> */}
 
-                                                <p
-                                                    className="mt-2 mb-1"
-                                                >
-                                                    Already registered? <a href="/Signin">Sign In</a>
-                                                </p>
-                                                {/* <p
-                          className="mt-2 mb-1"
-                          >
-                          Page 1 <a href="/RegPg2">Next Page</a>
-                        </p> */}
-                                            </center>
-                                            {/*  */}
+
                                         </div>
                                     </div>
                                 </form>
+
                                 <nav aria-label="Page navigation example">
                                     <ul className="pagination justify-content-center">
-                                        {/* <li className="page-item disabled">
-                                            <a className="page-link" href="#" tabindex="-1">Previous</a>
-                                        </li> */}
-
                                         <li className="page-item">
                                             <Link className="page-link" to="/insreg/address" >Next</Link>
                                         </li>
                                     </ul>
                                 </nav>
+
                             </div>
                         </div>
                     </div>

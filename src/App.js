@@ -5,23 +5,34 @@ import Admin from './components/admin/AdminMain'
 import Welcome from './components/home/Welcome'
 import Login from './components/admin/AdminLogin'
 import Register from './components/admin/AdminRegister'
+import InsRegister from './components/register/InsReg'
+
 
 function App() {
   return (
     <div className="App">
       <Switch>
+
+        <Route path="/insreg" >
+          <InsRegister />
+        </Route>
+
         <Route exact path="/admin" >
           <Admin />
         </Route>
+
         <Route path="/home">
           <Main />
         </Route>
+
         <Route exact path="/login" >
           <Login />
         </Route>
+
         <Route exact path="/register" >
           <Register />
         </Route>
+
         <Route exact path="/" >
           <Welcome />
         </Route>

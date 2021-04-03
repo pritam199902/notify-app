@@ -1,7 +1,7 @@
 export const insTypes = [{ id: "1", type: "School" }, { id: "2", type: "College" }, { id: "3", type: "Office" }]
 export const InstituteData = {
     isRegistered: {
-        flag: true
+        flag: false
     },
     Information: () => {
         return {
@@ -10,8 +10,8 @@ export const InstituteData = {
             logo: "",
             email: "",
             mobile: "",
-            helpDeskEmail: [{id : "", email : ""}],
-            helpDeskMobile: [{id : "", mobile : ""}]
+            helpDeskEmail: [{ id: "", email: "" }],
+            helpDeskMobile: [{ id: "", mobile: "" }]
         }
     },
     Address: () => {
@@ -61,14 +61,14 @@ export const InstituteData = {
 
 
 // admin data
-export const Admin= {
-    AdminList : ()=>{
+export const Admin = {
+    AdminList: () => {
         return [
             {
-                id : "",
-                name : "",
-                email : "",
-                mobile : "",
+                id: "",
+                name: "",
+                email: "",
+                mobile: "",
             }
         ]
     }

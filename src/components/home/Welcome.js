@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-// import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, Redirect } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
 
@@ -7,7 +7,7 @@ function Welcome() {
   // global data
   const Institute = useSelector((state) => state.Institute);
   const dispatch = useDispatch();
-  
+
   // local data
   const [isRegistered, setIsRegistered] = useState(Institute.isRegistered.flag)
   const Information = Institute.Information()
@@ -45,12 +45,12 @@ function Welcome() {
     return (
       <div className="container">
         <p className="text-success">
-            Please register your Institute/Office for FREE!
+          Please register your Institute/Office for FREE!
         </p>
         <button
           className="btn btn-success active"
           onClick={() => {
-            window.location = "/admin";
+            window.location = "/insreg";
           }}
         >
           <i className="fa fa-plus mr-2"></i>
@@ -65,10 +65,10 @@ function Welcome() {
       <h1 className="m-4 text-info" style={{ fontSize: 35, fontWeight: 700 }}>
         Welcome to Notify
       </h1>
-      
+
       {isRegistered ? Info() : Registration()}
       {/* {Info()} */}
-      
+
     </div>
   );
 }

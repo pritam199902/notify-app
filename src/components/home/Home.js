@@ -8,6 +8,7 @@ function Home() {
             <h2>Changing</h2>
             <h3>New Change</h3>
             <p>for pull request</p>
+            <p>New pull change</p>
         </div>
     )
 }

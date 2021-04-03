@@ -1,7 +1,7 @@
 export const insTypes = [{ id: "1", type: "School" }, { id: "2", type: "College" }, { id: "3", type: "Office" }]
 export const InstituteData = {
     isRegistered: {
-        flag: false
+        flag: true
     },
     Information: () => {
         return {

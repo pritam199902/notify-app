@@ -69,10 +69,8 @@ function Welcome() {
       </h1>
 
       {
-        isRegistered ? <Redirect to="/home" /> : <Redirect to="/insreg" />
+        goto && isRegistered ? <Redirect to="/home" /> : <Redirect to="/insreg" />
       }
-
-
       {isRegistered ? Info() : Registration()}
       {/* {Info()} */}
 

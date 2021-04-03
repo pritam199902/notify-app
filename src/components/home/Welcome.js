@@ -10,6 +10,8 @@ function Welcome() {
 
   // local data
   const [isRegistered, setIsRegistered] = useState(Institute.isRegistered.flag)
+  const [goto, setGoto] = useState(false)
+
   const Information = Institute.Information()
   const Description = Institute.Description()
 
@@ -31,7 +33,7 @@ function Welcome() {
         <button
           className="btn btn-info active"
           onClick={() => {
-            window.location = "/home";
+            setGoto(true)
           }}
         >
           <i className="fa fa-home mr-2"></i>
@@ -50,7 +52,7 @@ function Welcome() {
         <button
           className="btn btn-success active"
           onClick={() => {
-            window.location = "/insreg";
+            setGoto(true)
           }}
         >
           <i className="fa fa-plus mr-2"></i>
@@ -65,6 +67,11 @@ function Welcome() {
       <h1 className="m-4 text-info" style={{ fontSize: 35, fontWeight: 700 }}>
         Welcome to Notify
       </h1>
+
+      {
+        isRegistered ? <Redirect to="/home" /> : <Redirect to="/insreg" />
+      }
+
 
       {isRegistered ? Info() : Registration()}
       {/* {Info()} */}

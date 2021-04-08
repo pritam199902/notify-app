@@ -49,7 +49,7 @@ function NoticeType() {
 
 
                                         <div>
-                                            <Link to="#"><p style={{ fontWeight: 'bold' }}>View</p></Link>
+                                            <Link to="/"><p style={{ fontWeight: 'bold' }}>View</p></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -63,7 +63,7 @@ function NoticeType() {
 
 
                                         <div>
-                                            <Link to="#" ><p style={{ fontWeight: 'bold' }}>View</p></Link>
+                                            <Link to="/" ><p style={{ fontWeight: 'bold' }}>View</p></Link>
                                         </div>
                                     </div>
                                 </div>

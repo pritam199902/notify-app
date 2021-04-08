@@ -51,7 +51,7 @@ function Dept() {
                                                     power plants, and water and sewerage systems.</p> */}
                                             <label style={{ color: 'blue' }}>For total notice click in View button</label>
                                             <div>
-                                                <Link to="#"><button style={{ background: '#17d4d4', color: 'white' }} className="btn">View</button></Link>
+                                                <Link to="/"><button style={{ background: '#17d4d4', color: 'white' }} className="btn">View</button></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -77,8 +77,8 @@ function Dept() {
                                         </div>
                                         <hr />
                                         <div>
-                                            <Link to="#"><p style={{ fontWeight: 'bold' }}>notice 1</p></Link>
-                                            <Link to="#"><p style={{ fontWeight: 'bold' }}>notice 1</p></Link>
+                                            <Link to="/"><p style={{ fontWeight: 'bold' }}>notice 1</p></Link>
+                                            <Link to="/"><p style={{ fontWeight: 'bold' }}>notice 1</p></Link>
                                         </div>
                                     </div>
                                 </div>

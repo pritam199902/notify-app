@@ -35,7 +35,7 @@ function Noticeview() {
 
                                         <p>
 
-                                            <Link to="#">
+                                            <Link to="/">
                                                 <button className="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                                     Notice 1
                                         </button>

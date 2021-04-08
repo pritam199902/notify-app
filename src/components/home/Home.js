@@ -77,7 +77,7 @@ function Home() {
                                          motors and navigation systems, and electrical systems for automobiles and aircraft.</p>
                                             <label style={{ color: 'blue' }}>For total notice click in View button</label>
                                             <div>
-                                                <Link to="/"><button style={{ background: '#17d4d4', color: 'white' }} className="btn">View</button></Link>
+                                                <Link to="#"><button style={{ background: '#17d4d4', color: 'white' }} className="btn">View</button></Link>
                                             </div>
                                         </div>
                                     </div>

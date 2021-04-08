@@ -227,7 +227,7 @@ function Addnotice() {
                                                 </div>
 
                                                 {/* Submit Button */}
-                                                <button style={{ background: '#11accf' }} className="btn btn-light" type="submit">submit</button>
+                                                <button style={{ background: '#11accf' }} className="btn btn-light" type="submit">Submit</button>
                                             </div>
                                         </div>
                                     </form>

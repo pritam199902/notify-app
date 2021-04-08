@@ -1,4 +1,3 @@
-
 import { Route, Switch } from "react-router-dom";
 
 import Info from './info'

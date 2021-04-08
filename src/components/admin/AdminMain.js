@@ -4,6 +4,7 @@ import Home from './AdminHome'
 import Navbar from "../home/Navbar";
 // import Login from './AdminLogin'
 // import Register from './AdminRegister'
+import Addnotice from './Addnotice'
 
 
 function AdminMain() {
@@ -15,8 +16,11 @@ function AdminMain() {
             <Navbar />
 
             <Switch>
-                <Route exact path="/admin" >
+                <Route path="/admin" >
                     <Home />
+                </Route>
+                <Route exact path="/admin/Addnotice">
+                    <Addnotice />
                 </Route>
                 {/* <Route exact path="/admin/login" >
                     <Login />
@@ -24,6 +28,7 @@ function AdminMain() {
                 <Route exact path="/admin/register" >
                     <Register />
                 </Route> */}
+
             </Switch>
         </div>
     )
